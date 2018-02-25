@@ -105,7 +105,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service \
-    camera.device@3.2-impl \
+    camera.device@1.0-impl \
     libshim_camera \
     Snap
 
@@ -191,10 +191,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ebtables \
     ethertypes
-
-# IRQ
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
 
 # IRSC
 PRODUCT_COPY_FILES += \
