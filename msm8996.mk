@@ -185,6 +185,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/etc/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
     $(LOCAL_PATH)/gps/etc/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf
 
+# HIDL
+PRODUCT_PACKAGES += \
+    android.hidl.manager@1.0-java
+
 # IPv6
 PRODUCT_PACKAGES += \
     ebtables \
